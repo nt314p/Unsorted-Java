@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Inline local variable &apos;com.bayviewglen.samples.AOPS.main().a&apos; in &apos;com.bayviewglen.samples.AOPS.main()&apos;&#x0D;&#x0A;- Original project: &apos;Tester&apos;&#x0D;&#x0A;- Original element: &apos;com.bayviewglen.samples.AOPS.main().a&apos;" description="Inline local variable &apos;a&apos;" id="org.eclipse.jdt.ui.inline.temp" input="/src&lt;com.bayviewglen.samples{AOPS.java" selection="191 6" stamp="1444779630223" version="1.0"/>
+</session>

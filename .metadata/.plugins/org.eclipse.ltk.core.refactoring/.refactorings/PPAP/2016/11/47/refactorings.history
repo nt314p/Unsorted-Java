@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ppap&apos; to &apos;PPAP&apos;&#x0D;&#x0A;- Original project: &apos;PPAP&apos;&#x0D;&#x0A;- Original element: &apos;ppap&apos;&#x0D;&#x0A;- Renamed element: &apos;PPAP&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ppap&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{ppap.java[ppap" matchStrategy="1" name="PPAP" qualified="false" references="true" similarDeclarations="true" stamp="1479170452057" textual="false" version="1.0"/>
+</session>

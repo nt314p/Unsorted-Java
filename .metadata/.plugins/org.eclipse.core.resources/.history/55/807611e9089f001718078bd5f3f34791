@@ -1,0 +1,53 @@
+
+public class HackSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] sortList = { 4, 2, 11, 3, 7 }; // Input
+		int[] sortedList = new int[sortList.length]; // Output
+
+		int maxItem = sortList[0];
+		int minItem = sortList[0];
+
+		// Finding maximum item in the sortList array
+		for (int i = 0; i < sortList.length; i++) {
+			if (sortList[i] > maxItem) {
+				maxItem = sortList[i];
+			}
+		}
+
+		// Finding minimum item in the sortList array
+		for (int i = 0; i < sortList.length; i++) {
+			if (sortList[i] < minItem) {
+				minItem = sortList[i];
+			}
+		}
+
+		int[] spaceSorted = new int[maxItem-1]; // This is the sorted array, but it has spaces
+
+		// fill array with 0's (temp)
+		for (int i = 0; i < spaceSorted.length; i++) {
+			spaceSorted[i] = 0;
+		}
+
+		// Setting input list to the spaced out list
+		for (int i = 0; i < sortList.length; i++) {
+			spaceSorted[sortList[i]-minItem] = sortList[i];
+		}
+
+		for (int i = 0; i < spaceSorted.length; i++) {
+			System.out.println(spaceSorted[i]);
+		}
+		
+		// Moving non-null (0) items to the final array 
+		
+		for (int i = 0; i < sortList.length; i++) {
+			
+		}
+		
+		// System.out.println(minItem);
+
+	}
+
+}
