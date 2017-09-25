@@ -263,7 +263,7 @@ public class HackSort {
 		int minItem = sortList[0];
 
 		// Finding maximum and minimum item in the sortList array
-		for (int i = 1; i < sortList.length; i++) {
+		for (int i = 0; i < sortList.length; i++) {
 			if (sortList[i] > maxItem) {
 				maxItem = sortList[i];
 			}

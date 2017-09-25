@@ -1,9 +1,8 @@
 
-public class HackSort {
+public class CocktailSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		long startTime = System.currentTimeMillis();
 
 		int[] sortList = { 7103, 9482, 3869, 3914, 3180, 4413, 9100, 5923, 2581, 3535, 1719, 9320, 748, 5627, 5921,
@@ -255,48 +254,44 @@ public class HackSort {
 				1114, 9597, 4611, 1314, 3404, 9725, 6573, 3901, 8889, 74, 1943, 851, 6009, 138, 8370, 4484, 1197, 2555,
 				6076, 8449, 4335, 4161, 493, 7945, 7210, 307, 8128, 9744, 1543, 454, 1192, 4608, 8493, 5558, 3895, 9257,
 				2907, 9640, 5066, 2598, 351, 4925, 7531, 8071, 9913, 468, 3382, 514, 3450, 2722, 3544, 8384, 4657, 8520,
-				8245, 1537 }; // Input
+				8245, 1537 };
 
-		int[] sortedList = new int[sortList.length]; // Output
+		boolean swap = true; // true if there was a swap made that iteration
+		int ignoreLast = 0; // ignoring the last n items since they will be greater
+		int ignoreFirst = 0;
+		int temp; // temporary variable for swapping
 
-		int maxItem = sortList[0];
-		int minItem = sortList[0];
+		while (swap) {
+			ignoreLast++;
+			swap = false; // no swaps have taken place yet
 
-		// Finding maximum and minimum item in the sortList array
-		for (int i = 1; i < sortList.length; i++) {
-			if (sortList[i] > maxItem) {
-				maxItem = sortList[i];
+			for (int i = ignoreFirst; i < sortList.length - ignoreLast; i++) {
+				// comparing items and swapping
+
+				if (sortList[i] > sortList[i + 1]) {
+					// swapping
+					temp = sortList[i + 1];
+					sortList[i + 1] = sortList[i];
+					sortList[i] = temp;
+					swap = true;
+				}
 			}
-			
-			if (sortList[i] < minItem) {
-				minItem = sortList[i];
+			ignoreFirst++;
+			for (int i = sortList.length - ignoreLast-1; i >= ignoreFirst; i--) {
+				// comparing items and swapping
+
+				if (sortList[i] > sortList[i + 1]) {
+					// swapping
+					temp = sortList[i + 1];
+					sortList[i + 1] = sortList[i];
+					sortList[i] = temp;
+					swap = true;
+				}
 			}
 		}
-
-		int[] spaceSorted = new int[maxItem - minItem + 1]; // This is the sorted array, but it has spaces
-
-		// Setting input list to the spaced out list
-		for (int i = 0; i < sortList.length; i++) {
-			spaceSorted[sortList[i] - minItem] = sortList[i];
-		}
-
-		// Moving non-null (0) items to the final array
-		int j = 0;
-		for (int i = 0; i < sortedList.length; i++) {
-
-			// Skipping to next item if it is 0
-			while (spaceSorted[j] == 0) {
-				j++;
-			}
-
-			// Adding non-zero item to the final sorted list
-			sortedList[i] = spaceSorted[j];
-			j++;
-		}
-
-		// Printing out final sorted list
-		for (int i = 0; i < sortedList.length; i++) {
-			System.out.println(sortedList[i]);
+		
+		for(int i = 0; i< sortList.length; i++) {
+			System.out.println(sortList[i]);
 		}
 
 		long endTime = System.currentTimeMillis();
@@ -304,4 +299,5 @@ public class HackSort {
 
 		System.out.println("Millis: " + time);
 	}
+
 }
