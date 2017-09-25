@@ -279,7 +279,7 @@ public class BubbleSort {
 		}
 		
 		for(int i = 0; i< sortList.length; i++) {
-			System.out.println(sortList[i]);
+			//System.out.println(sortList[i]);
 		}
 
 		long endTime = System.currentTimeMillis();
