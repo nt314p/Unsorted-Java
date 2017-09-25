@@ -13,14 +13,15 @@ public class QuestionTwo_16 {
 		boolean magic = true; // if the square is magic or not
 
 		// reading in integers
+		
+		// columns
+		for (int c = 0; c < 4; c++) {
 
-		for (int c = 0; c < 4; c++) { // columns
-			for (int r = 0; r < 4; r++) { // rows
+			// rows
+			for (int r = 0; r < 4; r++) {
 				MagicSquare[r][c] = reader.nextInt();
 			}
 		}
-
-		reader.close();
 		
 		// setting sum to the sum of the first row
 		sum = MagicSquare[0][0] + MagicSquare[0][1] + MagicSquare[0][2] + MagicSquare[0][3];
@@ -38,7 +39,7 @@ public class QuestionTwo_16 {
 				magic = false;
 			}
 		}
-
+		
 		// printing out answer
 		if (magic) {
 			System.out.println("magic");

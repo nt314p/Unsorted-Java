@@ -11,20 +11,16 @@ public class BubbleSort {
 		boolean swap = true; // true if there was a swap made that iteration
 		int ignore = 0; // ignoring the last n items since they will be greater
 		int temp; // temporary variable for swapping
-
+		
 		while (swap) {
-			ignore++;
-			swap = false; // no swaps have taken place yet
-
+			
 			for (int i = 0; i < sortList.length - ignore; i++) {
-				// comparing items and swapping
-
-				if (sortList[i] > sortList[i + 1]) {
+				//comparing items and swapping
+				if (sortList[i] > sortList[i+1]) {
 					// swapping
-					temp = sortList[i + 1];
-					sortList[i + 1] = sortList[i];
+					temp = sortList[i+1];
+					sortList[i+1] = sortList[i];
 					sortList[i] = temp;
-					swap = true;
 				}
 			}
 		}

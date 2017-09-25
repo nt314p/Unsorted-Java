@@ -20,8 +20,6 @@ public class QuestionTwo_16 {
 			}
 		}
 
-		reader.close();
-		
 		// setting sum to the sum of the first row
 		sum = MagicSquare[0][0] + MagicSquare[0][1] + MagicSquare[0][2] + MagicSquare[0][3];
 
