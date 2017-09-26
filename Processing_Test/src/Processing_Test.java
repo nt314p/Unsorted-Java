@@ -30,9 +30,8 @@ public class Processing_Test extends PApplet {
 	double paddleX = 0.0;
 	int paddleW = screenSizeWidth / 8;
 	int paddleH = screenSizeWidth / 40;
-	
-	double paddleBoost = 1.1;
 
+	double paddleBoost = 0.9;
 
 	// Gravity
 	double gravity = 0.4;
@@ -52,7 +51,7 @@ public class Processing_Test extends PApplet {
 		strokeWeight(2);
 		ellipse(ballX, ballY, bwidth, bheight);
 		rectMode(2);
-		
+
 		fill(0, 255, 255);
 		rect((int) paddleX, 7 * screenSizeHeight / 8, paddleW, paddleH);
 
@@ -81,18 +80,18 @@ public class Processing_Test extends PApplet {
 			ballX = screenSizeWidth - (bwidth / 2);
 			speedX = -bounce * speedX;
 		}
-		
-		//Top edge bounce
-		if(ballY < (bheight /2) && speedY < 0){
-			ballY = (bheight /2);
+
+		// Top edge bounce
+		if (ballY < (bheight / 2) && speedY < 0) {
+			ballY = (bheight / 2);
 			speedY = speedY * -bounce;
 		}
 
 		// Bottom edge bounce/kill
 		if (ballY > screenSizeHeight) {
-			ballY = screenSizeHeight/10;//screenSizeWidth - (bheight / 2);
-			ballX = screenSizeWidth/2;
-			speedY = 10;//-bounce * speedY;
+			ballY = screenSizeHeight / 10;// screenSizeWidth - (bheight / 2);
+			ballX = screenSizeWidth / 2;
+			speedY = 10;// -bounce * speedY;
 			speedX = random(-10, 10);
 		}
 
@@ -102,7 +101,8 @@ public class Processing_Test extends PApplet {
 		}
 
 		if (paddleX - paddleW < ballX && ballX < paddleX + paddleW) {
-			if (ballY > (7 * screenSizeHeight / 8) - (bheight / 2) - (paddleH) && ballY<(7 * screenSizeHeight / 8) - (bheight / 2) + (paddleH)) {
+			if (ballY > (7 * screenSizeHeight / 8) - (bheight / 2) - (paddleH)
+					&& ballY < (7 * screenSizeHeight / 8) - (bheight / 2) + (paddleH)) {
 				speedY = -speedY * paddleBoost;
 			}
 		}
