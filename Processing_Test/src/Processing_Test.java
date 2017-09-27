@@ -9,7 +9,7 @@ public class Processing_Test extends PApplet {
 	}
 
 	int screenSizeWidth = 800;
-	int screenSizeHeight = 800;
+	int screenSizeHeight = 1200;
 
 	// Speed of the ball
 	double speedX = 20;
@@ -24,17 +24,21 @@ public class Processing_Test extends PApplet {
 	int bheight = 40;
 
 	// Bounciness
-	double bounce = 0.80;
+	double bounce = 0.90;
 
 	// Paddle
 	double paddleX = 0.0;
 	int paddleW = screenSizeWidth / 8;
 	int paddleH = screenSizeWidth / 40;
+	
+	// ai paddle
+	double aiX;
+	double aiY;
 
-	double paddleBoost = 0.9;
+	double paddleBoost = 1.3;
 
 	// Gravity
-	double gravity = 0.4;
+	double gravity = 0.0;
 
 	public void setup() {
 		frameRate(60);
@@ -54,7 +58,17 @@ public class Processing_Test extends PApplet {
 
 		fill(0, 255, 255);
 		rect((int) paddleX, 7 * screenSizeHeight / 8, paddleW, paddleH);
-
+		
+		
+		// Moving paddle
+		if (mouseX < paddleW) {
+			paddleX = paddleW;
+		} else if (mouseX > screenSizeWidth - (paddleW)) {
+			paddleX = screenSizeWidth - (paddleW);
+		} else {
+			paddleX = mouseX;
+		}
+		
 		if (mouseX < paddleW) {
 			paddleX = paddleW;
 		} else if (mouseX > screenSizeWidth - (paddleW)) {
@@ -81,18 +95,26 @@ public class Processing_Test extends PApplet {
 			speedX = -bounce * speedX;
 		}
 
-		// Top edge bounce
-		if (ballY < (bheight / 2) && speedY < 0) {
-			ballY = (bheight / 2);
-			speedY = speedY * -bounce;
-		}
+		// Top edge bounce (disabled for pong)
+//		if (ballY < (bheight / 2) && speedY < 0) {
+//			ballY = (bheight / 2);
+//			speedY = speedY * -bounce;
+//		}
 
 		// Bottom edge bounce/kill
 		if (ballY > screenSizeHeight) {
-			ballY = screenSizeHeight / 10;// screenSizeWidth - (bheight / 2);
+			ballY = screenSizeHeight / 2;// screenSizeWidth - (bheight / 2);
 			ballX = screenSizeWidth / 2;
 			speedY = 10;// -bounce * speedY;
 			speedX = random(-10, 10);
+		}
+
+		// Top edge bounce/kill
+		if (ballY < 0) {
+			ballY = screenSizeHeight / 2;// screenSizeWidth - (bheight / 2);
+			ballX = screenSizeWidth / 2;
+			speedY = random(-2, 2)+5;// -bounce * speedY;
+			speedX = random(-2, 2)+5;
 		}
 
 		// Gravity
