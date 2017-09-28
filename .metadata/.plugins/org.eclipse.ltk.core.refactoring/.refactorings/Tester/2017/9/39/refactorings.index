@@ -8,3 +8,6 @@
 1506445170279	Copy package
 1506446701611	Copy package
 1506446723625	Delete element
+1506542800522	Rename local variable 'cSquared'
+1506542812532	Rename local variable 'bSquared'
+1506542823090	Rename local variable 'aSquared'
