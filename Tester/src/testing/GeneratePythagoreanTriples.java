@@ -13,13 +13,17 @@ public class GeneratePythagoreanTriples {
 
 		int f = 0;
 
-		int iterations = 25;
-		int size = ((iterations - 1) / 2);
-		size *= (iterations - 1);
+		int iterations = 45; // must be odd for some reason...
+		float size = ((iterations - 1) / 2);
+		size *= (iterations - 2);
 
-		long cSqu[] = new long[size];
-		long bSqu[] = new long[size];
-		long aSqu[] = new long[size];
+		long cSqu[] = new long[(int) size];
+		long bSqu[] = new long[(int) size];
+		long aSqu[] = new long[(int) size];
+//		long simLeg[] = new long[(int) size];
+//		long simHyp[] = new long[(int) size];
+
+
 
 		for (n = 1; n < iterations; n++) {
 			for (m = n + 1; m < iterations; m++) {
@@ -38,17 +42,14 @@ public class GeneratePythagoreanTriples {
 		for (int i = 0; i < cSqu.length; i++) {
 			for (int j = 0; j < aSqu.length; j++) {
 				if (cSqu[i] == aSqu[j]) {
-					System.out.println(cSqu[i] + ", " + aSqu[j]);
-					System.out.println("a: " + aSqu[j] + ", b: " + bSqu[j] + ", c: " + cSqu[j]);
-					System.out.println("a: " + aSqu[i] + ", b: " + bSqu[i] + ", c: " + cSqu[i]);
+					System.out.print(cSqu[i] + ", " + aSqu[j]);
+					System.out.print("; a: " + aSqu[j] + ", b: " + bSqu[j] + ", c: " + cSqu[j]);
+					System.out.println("; a: " + aSqu[i] + ", b: " + bSqu[i] + ", c: " + cSqu[i]);
 				}
 				if (cSqu[i] == bSqu[j]) {
-					System.out.println(cSqu[i] + ", " + bSqu[j]);
-					System.out.println("a: " + aSqu[j] + ", b: " + bSqu[j] + ", c: " + cSqu[j]);
-					System.out.println("a: " + aSqu[i] + ", b: " + bSqu[i] + ", c: " + cSqu[i]);
-				}
-				if (cSqu[j] == 132 || cSqu[i] == 132) {
-					System.out.println("potato");
+					System.out.print(cSqu[i] + ", " + bSqu[j]);
+					System.out.print("; a: " + aSqu[j] + ", b: " + bSqu[j] + ", c: " + cSqu[j]);
+					System.out.println("; a: " + aSqu[i] + ", b: " + bSqu[i] + ", c: " + cSqu[i]);
 				}
 			}
 		}
