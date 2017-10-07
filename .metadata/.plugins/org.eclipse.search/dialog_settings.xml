@@ -29,12 +29,12 @@
 		</list>
 	</section>
 	<section name="SearchDialog">
-		<item value="org.eclipse.mylyn.tasks.ui.search.page" key="PREVIOUS_PAGE"/>
+		<item value="org.eclipse.jdt.ui.JavaSearchPage" key="PREVIOUS_PAGE"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item value="498" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-21|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="430" key="DIALOG_HEIGHT"/>
+		<item value="758" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="629" key="DIALOG_HEIGHT"/>
 		<item value="588" key="DIALOG_X_ORIGIN"/>
 		<item value="296" key="DIALOG_Y_ORIGIN"/>
 	</section>
