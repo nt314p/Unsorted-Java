@@ -64,5 +64,7 @@ public class ProblemTwo {
 		} else {
 			System.out.println("0");
 		}
+		
+		reader.close();
 	}
 }

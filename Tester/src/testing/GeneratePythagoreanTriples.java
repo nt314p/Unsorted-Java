@@ -7,7 +7,6 @@ public class GeneratePythagoreanTriples {
 		long a;
 		long b;
 		long c;
-		long d;
 		long m;
 		long n;
 
