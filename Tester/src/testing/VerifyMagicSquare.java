@@ -61,6 +61,14 @@ public class VerifyMagicSquare {
 		}
 		
 		// diagonal down right
+		int test = 0;
+
+		for (int i = 0; i < size; i++) {
+			test += square[i][i];
+		}
+		if (!(test == check)) {
+			magic = false;
+		}
 		
 
 		if (magic) {
