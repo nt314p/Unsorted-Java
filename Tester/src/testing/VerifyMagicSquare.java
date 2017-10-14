@@ -70,6 +70,18 @@ public class VerifyMagicSquare {
 			magic = false;
 		}
 		
+		System.out.println(test);
+
+		
+		// diagonal up right
+		for (int i = 0; i < size; i++) {
+			test += square[i][size-i];
+		}
+		if (!(test == check)) {
+			magic = false;
+		}
+		System.out.println(test);
+
 
 		if (magic) {
 			System.out.println("magic");
