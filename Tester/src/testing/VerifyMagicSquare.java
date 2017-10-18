@@ -88,6 +88,8 @@ public class VerifyMagicSquare {
 		} else {
 			System.out.println("not magic");
 		}
+		
+		reader.close();
 
 	}
 
