@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="processing.core.PApplet"/>
 <fullyQualifiedTypeName name="processing.core.PFont"/>
 <fullyQualifiedTypeName name="processing.event.MouseEvent"/>
 <fullyQualifiedTypeName name="Apple"/>
 <fullyQualifiedTypeName name="math.Math"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 <fullyQualifiedTypeName name="java.math.RoundingMode"/>
@@ -17,4 +15,6 @@
 <fullyQualifiedTypeName name="robocode.Bullet"/>
 <fullyQualifiedTypeName name="robocode.Robot"/>
 <fullyQualifiedTypeName name="robocode.HitRobotEvent"/>
+<fullyQualifiedTypeName name="processing.core.PApplet"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
