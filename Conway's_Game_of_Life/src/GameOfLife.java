@@ -5,8 +5,8 @@ public class GameOfLife extends PApplet {
 	public static void main(String[] args) {
 		PApplet.main("GameOfLife");
 	}
-	
-	//ADD MORE DEATH
+
+	// ADD MORE DEATH
 
 	/*
 	 * CONWAY'S GAME OF LIFE Rules:
@@ -19,12 +19,12 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 1000;
-	int sHeight = 1000;
-	int scale = 5; // the side length of each cell
+	int sWidth = 400;
+	int sHeight = 400;
+	int scale = 20; // the side length of each cell
 
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
-	boolean newcells[][] = cells;
+	boolean tmp[][] = new boolean[sWidth / scale][sHeight / scale]; // cells;
 
 	public void settings() {
 		size(sWidth, sHeight);
@@ -32,17 +32,30 @@ public class GameOfLife extends PApplet {
 
 	public void setup() {
 		frameRate(60);
-		cells[4][3] = true;
-		cells[4][4] = true;
-		cells[4][5] = true;
+		fill(255, 255, 0);
 	}
 
 	public void draw() {
+		
+		display();
+
+		if (frameCount % 5 == 0) {
+			// step();
+		}
+
+		if (frameCount % 10 == 0) {
+			// System.out.println(frameRate);
+		}
+	}
+
+	public void keyTyped() {
+		step();
+	}
+
+	public void display() {
 		// background
-		fill(255, 255, 0);
 		background(100, 100, 100);
 
-		newcells = cells;
 		// drawing cells
 		for (int i = 0; i < (width / scale); i++) {
 			for (int j = 0; j < (height / scale); j++) {
@@ -51,31 +64,35 @@ public class GameOfLife extends PApplet {
 				}
 			}
 		}
+	}
 
-		if (frameCount % 10 == 0) {
-
-			// across
-			for (int i = 0; i < (width / scale); i++) {
-				// down
-				for (int j = 0; j < (height / scale); j++) {
-					// computing next iteration
-					int currNeighbors = getNeighbors(i, j);
-					
-					if (currNeighbors == 3) {
-						// Dead cell comes to life
-						newcells[i][j] = true;
-					} else if (currNeighbors == 2 && cells[i][j]) {
-						// Living cell stays alive
-						newcells[i][j] = true;
-					} else {
-						// Cell dies
-						newcells[i][j] = false;
-					}
-					
+	public void step() {
+		// across
+		for (int i = 0; i < (width / scale); i++) {
+			// down
+			for (int j = 0; j < (height / scale); j++) {
+				// computing next iteration
+				int currNeighbors = getNeighbors(i, j);
+				if (currNeighbors == 3) {
+					// Dead cell comes to life
+					tmp[i][j] = true;
+					//
+				} else if (currNeighbors == 2 && cells[i][j]) {
+					// Living cell stays alive
+					tmp[i][j] = true;
+				} else {
+					// Cell dies
+					tmp[i][j] = false;
 				}
 			}
 		}
 
+		// setting tmp array to the cells one
+		for (int i = 0; i < (width / scale); i++) {
+			for (int j = 0; j < (height / scale); j++) {
+				cells[i][j] = tmp[i][j];
+			}
+		}
 	}
 
 	public int getNeighbors(int i, int j) {
@@ -92,7 +109,7 @@ public class GameOfLife extends PApplet {
 						neighbors++;
 					}
 				} catch (IndexOutOfBoundsException e) {
-					// System.out.println("exception");
+
 				}
 			}
 		}
@@ -108,13 +125,17 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void changeState() {
-		// adding or taking away cells
-		boolean state = cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)];
-		if (state) {
-			cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)] = false;
-		} else {
-			cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)] = true;
-		}
+		// try catch for out of bounds mouse inputs
+		try {
+			// adding or taking away cells
+			boolean state = cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)];
+			if (state) {
+				cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)] = false;
+			} else {
+				cells[Math.round(mouseX / scale)][Math.round(mouseY / scale)] = true;
+			}
+		} catch (IndexOutOfBoundsException e) {
 
+		}
 	}
 }
