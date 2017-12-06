@@ -15,6 +15,6 @@
 <fullyQualifiedTypeName name="robocode.Bullet"/>
 <fullyQualifiedTypeName name="robocode.Robot"/>
 <fullyQualifiedTypeName name="robocode.HitRobotEvent"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="processing.core.PApplet"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>

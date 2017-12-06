@@ -17,6 +17,9 @@ public class PrimeSpiralGenerator extends PApplet {
 	int xDir = 1;
 	int yDir = 1;
 	int len = 1;
+	
+	int startX = currX;
+	int startY = currY;
 
 	public void settings() {
 		size(sWidth, sHeight);
@@ -24,9 +27,13 @@ public class PrimeSpiralGenerator extends PApplet {
 
 	public void setup() {
 		frameRate(60);
+		rectMode(CENTER);
 	}
 
 	public void draw() {
+		// move xDir*scale up
+		// move 
+		
 		
 	}
 
