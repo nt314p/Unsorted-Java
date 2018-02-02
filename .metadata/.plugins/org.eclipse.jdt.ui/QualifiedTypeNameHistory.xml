@@ -15,9 +15,9 @@
 <fullyQualifiedTypeName name="robocode.Robot"/>
 <fullyQualifiedTypeName name="robocode.HitRobotEvent"/>
 <fullyQualifiedTypeName name="processing.core.PApplet"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
