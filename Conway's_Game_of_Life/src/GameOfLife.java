@@ -19,8 +19,8 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 400;
-	int sHeight = 400;
+	int sWidth = 1000;
+	int sHeight = 1000;
 	int scale = 20; // the side length of each cell
 
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
@@ -39,7 +39,7 @@ public class GameOfLife extends PApplet {
 		
 		display();
 
-		if (frameCount % 5 == 0) {
+		if (frameCount % 2 == 0) {
 			// step();
 		}
 
