@@ -5,12 +5,15 @@ public class Prob5 {
 
 	static int n;
 	static Path[] paths;
+	static int placeInPath = 0;
 
 	public static void main(String[] args) {
 
 		Scanner reader = new Scanner(System.in);
 
 		boolean allReachable = true;
+		int numEndPages = 0;
+		int endPages[];
 
 		n = reader.nextInt();
 		paths = new Path[n]; // array containing pages and info about them
@@ -26,11 +29,23 @@ public class Prob5 {
 			int m = reader.nextInt(); // getting the amount of options
 			int[] toPaths = new int[m]; // temporary array with size of options
 
+			if (m == 0) {
+				numEndPages++;
+			}
 			for (int j = 0; j < m; j++) { // looping up to m, j is the path number
 				toPaths[j] = reader.nextInt(); // putting input into the temporary array
 			}
 
 			paths[i].setToPath(toPaths); // setting the toPath to the temporary array
+		}
+
+		endPages = new int[numEndPages]; // creating array with size of the number of end pages
+		int placeEndPages = 0; // the current place in the array endPages
+		for (Path p : paths) {
+			if (p.getToPath().length == 0) { // true only if the pages lead nowhere (endpage)
+				endPages[placeEndPages] = p.getPage(); // adding the endPage to the endPages array
+				placeEndPages++;
+			}
 		}
 
 		checkSubpages(1); // recursive function to check if the subpages are accessible
@@ -89,17 +104,18 @@ public class Prob5 {
 						paths[i].setFromPath(fromPaths); // setting the temporary array to fromPaths
 
 					} else {
-						// setting fromPath to a blank array if there are no pages that lead to the (j +
-						// 1)th page
+						// setting fromPath to a blank array 
+						// if there are no pages that lead to the (j + 1)th page
 						paths[i].setFromPath(new int[0]);
 					}
 				}
 			}
 		}
 
-		// n: the last page, 1: the number of pages you need to get there (just one)
-		generateDistance(n, 1); // generating distances
-		
+		for (int p : endPages) { // testing distances from all endPages
+			generateDistance(p, 1); // generating distances
+		}
+
 		// uncomment to get more detailed info about the pages
 		// printPageInfo();
 
@@ -112,7 +128,7 @@ public class Prob5 {
 		} else {
 			System.out.println("N");
 		}
-
+		
 		System.out.println(paths[0].getDistToEnd()); // printing the distance to the end from the first page
 
 		reader.close(); // closing reader
@@ -139,9 +155,9 @@ public class Prob5 {
 		Path p = paths[pNum - 1];
 
 		// setting the distance only if it is smaller than the current one
-		p.setDistToEnd(Math.min(p.getDistToEnd(), dist));
 
-		if (!p.checkedFrom()) { // running only if it was not checked before (prevents loops)
+		if (p.getDistToEnd() > dist) { // running only if it was not checked before (prevents loops)
+			p.setDistToEnd(dist);
 			p.setCheckedFrom(true); // the page was checked
 
 			for (int i = 0; i < p.getFromPath().length; i++) {
