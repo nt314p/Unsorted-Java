@@ -27,6 +27,4 @@ public class Num {
 	public int getType() {
 		return type;
 	}
-	
-	
 }
