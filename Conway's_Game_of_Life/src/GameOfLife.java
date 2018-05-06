@@ -19,11 +19,13 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 1000;
-	int sHeight = 1000;
-	int scale = 20; // the side length of each cell
+	int sWidth = 1200;
+	int sHeight = 1200;
+	int scale = 10; // the side length of each cell
 
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
+	
+	// set tmp to cells to get glitchy
 	boolean tmp[][] = new boolean[sWidth / scale][sHeight / scale]; // cells;
 
 	public void settings() {
@@ -31,21 +33,14 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void setup() {
-		frameRate(60);
+		frameRate(80);
 		fill(255, 255, 0);
 	}
 
 	public void draw() {
 		
 		display();
-
-		if (frameCount % 2 == 0) {
-			// step();
-		}
-
-		if (frameCount % 10 == 0) {
-			// System.out.println(frameRate);
-		}
+		step();
 	}
 
 	public void keyTyped() {
