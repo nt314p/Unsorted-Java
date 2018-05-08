@@ -12,9 +12,9 @@ public class PrimeSpiralGenerator extends PApplet {
 	int[] primePlaces; // the nth prime number list, where the nth element is the (n+1)th prime number
 	Num[] numbers; // one indexed
 
-	int sWidth = 2160; // width of screen
-	int sHeight = 1440; // height of screen
-	int scale = 6; // the side length of the squares
+	int sWidth = 1000; // width of screen
+	int sHeight = 1000; // height of screen
+	int scale = 2; // the side length of the squares
 
 	int currX = Math.round(sWidth / 2); //setting the current x and y to the center of screen
 	int currY = Math.round(sHeight / 2);
@@ -25,8 +25,8 @@ public class PrimeSpiralGenerator extends PApplet {
 	int squareNum = 1; // the number of the square we are on
 
 	public void settings() {
-		// size(sWidth, sHeight);
-		fullScreen();
+		size(sWidth, sHeight);
+		//fullScreen();
 	}
 
 	public void setup() {
@@ -37,7 +37,7 @@ public class PrimeSpiralGenerator extends PApplet {
 		strokeWeight(0); // no stroke
 		
 		// generating the primes (needs to be a little bit higher than semiprimes)
-		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.05));
+		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.08));
 
 		// generating semiprimes
 		generateSemiprimes((int) (Math.pow(sWidth / scale, 2)));
@@ -48,6 +48,8 @@ public class PrimeSpiralGenerator extends PApplet {
 		for (int i = 0; i < numbers.length; i++) { // initializing numbers
 			numbers[i] = new Num(i, 0); // setting number type to composite
 		}
+		
+		setNumberTypes();
 
 		// for(int n: semiprimes) {
 		// System.out.println(n);
@@ -188,11 +190,19 @@ public class PrimeSpiralGenerator extends PApplet {
 	
 	public void setNumberTypes () {
 		for (int i = 0; i < primes.length; i++) {
-			numbers[primes[i]].setType(2); 
+			try {
+				numbers[primes[i]].setType(2); 
+			} catch (IndexOutOfBoundsException e) {
+
+			}
 		}
 		
 		for (int i = 0; i < primes.length; i++) {
-			numbers[semiprimes[i]].setType(1); 
+			try {
+				numbers[semiprimes[i]].setType(1); 
+			} catch (IndexOutOfBoundsException e) {
+
+			}
 		}
 	}
 
