@@ -21,9 +21,7 @@ public class GenerateArray {
 			for (int i = 0; i < max - min + 1; i++) {
 				nums[i] = min + i;
 			}
-			
-			
-			
+						
 			return nums;
 		}
 

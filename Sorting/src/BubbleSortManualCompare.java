@@ -40,6 +40,7 @@ public class BubbleSortManualCompare {
 	}
 
 	public static String manualCompare(String a, String b) {
+		Scanner reader = new Scanner(System.in);
 		System.out.println("1: " + a + " or 2: " + b);
 		int in = reader.nextInt();
 		reader.close();
