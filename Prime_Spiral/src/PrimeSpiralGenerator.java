@@ -14,7 +14,7 @@ public class PrimeSpiralGenerator extends PApplet {
 
 	int sWidth = 1000; // width of screen
 	int sHeight = 1000; // height of screen
-	int scale = 2; // the side length of the squares
+	int scale = 5; // the side length of the squares
 
 	int currX = Math.round(sWidth / 2); //setting the current x and y to the center of screen
 	int currY = Math.round(sHeight / 2);
@@ -37,10 +37,10 @@ public class PrimeSpiralGenerator extends PApplet {
 		strokeWeight(0); // no stroke
 		
 		// generating the primes (needs to be a little bit higher than semiprimes)
-		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.08));
+		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.20));
 
 		// generating semiprimes
-		generateSemiprimes((int) (Math.pow(sWidth / scale, 2)));
+		generateSemiprimes((int) (Math.pow(sWidth / scale, 2) * 1.1));
 		
 		// the numbers array
 		numbers = new Num[(int) Math.pow(sWidth / scale, 2) + 1]; // adding one since numbers is one indexed

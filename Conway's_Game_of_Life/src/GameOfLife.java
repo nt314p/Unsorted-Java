@@ -14,13 +14,14 @@ public class GameOfLife extends PApplet {
 	 * 1. Any live cell with fewer than two live neighbors dies (under population).
 	 * 2. Any live cell with more than three live neighbors dies (over population).
 	 * 3. Any live cell with two or three live neighbors lives, unchanged, to the
-	 * next generation. 4. Any dead cell with exactly three live neighbors will come
+	 * next generation. 
+	 * 4. Any dead cell with exactly three live neighbors will come
 	 * to life.
 	 * 
 	 */
 
-	int sWidth = 1200;
-	int sHeight = 1200;
+	int sWidth = 2160;
+	int sHeight = 1440;
 	int scale = 10; // the side length of each cell
 
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
@@ -29,18 +30,19 @@ public class GameOfLife extends PApplet {
 	boolean tmp[][] = new boolean[sWidth / scale][sHeight / scale]; // cells;
 
 	public void settings() {
-		size(sWidth, sHeight);
+		fullScreen();
+		//size(sWidth, sHeight);
 	}
 
 	public void setup() {
-		frameRate(80);
+		frameRate(40);
 		fill(255, 255, 0);
 	}
 
 	public void draw() {
 		
 		display();
-		step();
+		//step();
 	}
 
 	public void keyTyped() {
