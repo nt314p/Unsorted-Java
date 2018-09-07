@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -14,6 +17,9 @@ public class Pepinot {
 
 	static Document doc = null;
 	static List<String> words = new ArrayList<String>();
+	static String attribute = ""; // y (an attribute of x)
+	static String object = ""; // x (has y as an attribute)
+	static Object answer;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -26,6 +32,8 @@ public class Pepinot {
 		 * EX: Is 21 a semiprime? semiprime(21)
 		 * 
 		 */
+
+		Pepinot cls = new Pepinot(); // instantiating class to use later
 
 		char punctuation = '\u0000';
 		String questionPhrase = "";
@@ -62,7 +70,7 @@ public class Pepinot {
 		for (String s : input.split(" ")) { // splitting string on space
 			words.add(s); // looping through split input and adding them to word list
 		}
-		
+
 		questionPhrase = matchQuestionPhrase();
 		System.out.println("\nQuestion phrase: " + questionPhrase);
 
@@ -87,7 +95,72 @@ public class Pepinot {
 			System.out.print(s + " ");
 		}
 
+		for (String w : questionPhrase.split(" ")) {
+			words.remove(w); // removing the words from the prompt if it exists in the question phrase
+		}
+
+		System.out.println("\n\nNo question phrase:");
+		for (String s : words) { // printing out all words (without question phrase)
+			System.out.print(s + " ");
+		}
+		
+		int promptNumberIndex = -1;
+		for (int i = 0; i < words.size(); i++) {
+			if (isNumeric(words.get(i))) {
+				promptNumberIndex = i;
+			}
+		}
+		System.out.println("\n\nNumber Index: " + promptNumberIndex);
+
+		if (words.contains("of")) { // seeing if the stripped prompt contains "of"
+			int splitIndex = words.indexOf("of"); // setting index
+			for (int i = 0; i < splitIndex; i++) { // iterating up to index
+				attribute += words.get(i) + "_"; // adding word to attribute
+			}
+			attribute = attribute.substring(0, attribute.length() - 1); // taking off last character (a space)
+
+			for (int i = splitIndex + 1; i < words.size(); i++) { // iterating from index to end of list
+				object += words.get(i) + " "; // adding word to object
+			}
+			object = object.substring(0, object.length() - 1); // taking off last character (a space)
+		} else if (!(promptNumberIndex ==-1)) { // most likely an IS question. EX: IS y x? where y is a number
+			
+		}
+		
+		System.out.println("\n\nAttribute: " + attribute);
+		System.out.println("Object: " + object);
+
+		try {
+			// getting the method based on the attribute
+			Method attributeMethod = cls.getClass().getMethod(attribute, String.class);
+
+			// invoking attribute method and passing in object as parameter
+			answer = attributeMethod.invoke(new Pepinot(), object);
+		} catch (NoSuchMethodException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("\nAnswer is: " + answer);
+
 		reader.close();
+
+	}
+
+	public double square_root(String num) {
+		return Math.sqrt(Double.parseDouble(num));
 	}
 
 	public static boolean isArticle(String s) {
@@ -112,15 +185,15 @@ public class Pepinot {
 				matching = matching && words.get(j).equals(questSplit[j]); // setting match to true or false
 			}
 			if (matching)
-				return a.get(i).getNodeName(); // if the words matches the question phrase, return the nodes name
+				return a.get(i).getTextContent(); // if the words matches the question phrase, return the nodes name
 		}
 		return "No match";
 	}
 
 	public static List<Node> getNodeList(String name) { // creating node list of children with parent "name"
-		NodeList nl = doc.getDocumentElement().getElementsByTagName(name).item(0).getChildNodes(); 
+		NodeList nl = doc.getDocumentElement().getElementsByTagName(name).item(0).getChildNodes();
 		ArrayList<Node> rl = new ArrayList<Node>(); // return array
-		
+
 		for (int i = 0; i < nl.getLength(); i++) { // looping through children
 			if (nl.item(i).getNodeType() == Node.ELEMENT_NODE) { // checking if child is legit (no #'s)
 				rl.add(nl.item(i)); // adding child to return array
@@ -128,5 +201,13 @@ public class Pepinot {
 		}
 		return rl;
 	}
-
+	
+	public static boolean isNumeric(String strNum) {
+	    try {
+	        double d = Double.parseDouble(strNum); // trying to parse string to a number
+	    } catch (NumberFormatException | NullPointerException nfe) {
+	        return false; // catching the exception
+	    }
+	    return true;
+	}
 }
