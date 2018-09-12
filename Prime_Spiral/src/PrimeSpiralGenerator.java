@@ -4,7 +4,8 @@ public class PrimeSpiralGenerator extends PApplet {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		PApplet.main("PrimeSpiralGenerator");
+		PrimeSpiralGenerator psg = new PrimeSpiralGenerator();
+        PApplet.runSketch(new String[]{"PrimeSpiralGenerator"}, psg);
 	}
 
 	int[] primes;
@@ -12,9 +13,9 @@ public class PrimeSpiralGenerator extends PApplet {
 	int[] primePlaces; // the nth prime number list, where the nth element is the (n+1)th prime number
 	Num[] numbers; // one indexed
 
-	int sWidth = 1000; // width of screen
-	int sHeight = 1000; // height of screen
-	int scale = 5; // the side length of the squares
+	int sWidth = 800; // width of screen
+	int sHeight = 800; // height of screen
+	int scale = 2; // the side length of the squares
 
 	int currX = Math.round(sWidth / 2); //setting the current x and y to the center of screen
 	int currY = Math.round(sHeight / 2);
@@ -30,11 +31,11 @@ public class PrimeSpiralGenerator extends PApplet {
 	}
 
 	public void setup() {
-		frameRate(60);
+		frameRate(100);
 
 		rectMode(CENTER); // draw rectangle from center
 
-		strokeWeight(0); // no stroke
+		noStroke(); // no stroke
 		
 		// generating the primes (needs to be a little bit higher than semiprimes)
 		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.20));
@@ -72,8 +73,8 @@ public class PrimeSpiralGenerator extends PApplet {
 
 		} else if (numbers[squareNum].getType() == 1) { //checking if number is semiprime (type 1)
 			// coloring semiprimes green
-			stroke(0, 128, 0);
-			fill(0, 128, 0);
+			//stroke(0, 128, 0);
+			//fill(0, 128, 0);
 
 		} else if (numbers[squareNum].getType() == 2) { // checking if number is prime (type 2)
 

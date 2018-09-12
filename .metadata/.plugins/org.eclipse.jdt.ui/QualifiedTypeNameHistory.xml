@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="robocode.Bullet"/>
     <fullyQualifiedTypeName name="robocode.Robot"/>
     <fullyQualifiedTypeName name="robocode.HitRobotEvent"/>
-    <fullyQualifiedTypeName name="processing.core.PApplet"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
@@ -37,4 +36,5 @@
     <fullyQualifiedTypeName name="com.sun.tools.script.shell.Main"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
     <fullyQualifiedTypeName name="com.sun.deploy.util.StringUtils"/>
+    <fullyQualifiedTypeName name="processing.core.PApplet"/>
 </qualifiedTypeNameHistroy>
