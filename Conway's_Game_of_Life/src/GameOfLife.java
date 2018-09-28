@@ -3,7 +3,8 @@ import processing.core.PApplet;
 public class GameOfLife extends PApplet {
 
 	public static void main(String[] args) {
-		PApplet.main("GameOfLife");
+		GameOfLife gol = new GameOfLife();
+        PApplet.runSketch(new String[]{"GameOfLife"}, gol);
 	}
 
 	// ADD MORE DEATH
@@ -37,6 +38,12 @@ public class GameOfLife extends PApplet {
 	public void setup() {
 		frameRate(40);
 		fill(255, 255, 0);
+		
+		for (int i = 0; i < sWidth/scale; i++) {
+			for (int j = 0; j < sHeight/scale; j++) {
+				cells[i][j] = Math.random() < 0.5;
+			}
+		}
 	}
 
 	public void draw() {
