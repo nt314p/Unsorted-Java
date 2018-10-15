@@ -5,7 +5,8 @@ public class Processing_Test extends PApplet {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		PApplet.main("Processing_Test");
+		Processing_Test pt = new Processing_Test();
+		PApplet.runSketch(new String[] { "Processing_Test" }, pt);
 	}
 
 	int screenSizeWidth = 800;

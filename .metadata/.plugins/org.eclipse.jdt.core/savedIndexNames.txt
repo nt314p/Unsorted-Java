@@ -8,7 +8,6 @@ INDEX VERSION 1.131+C:\Dev\GitHub\Unsorted-Java\.metadata\.plugins\org.eclipse.j
 343563407.index
 2452500305.index
 2228597084.index
-468923547.index
 1733455039.index
 2751984921.index
 858238573.index
