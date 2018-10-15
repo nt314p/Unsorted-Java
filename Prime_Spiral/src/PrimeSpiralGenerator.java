@@ -5,7 +5,7 @@ public class PrimeSpiralGenerator extends PApplet {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		PrimeSpiralGenerator psg = new PrimeSpiralGenerator();
-        PApplet.runSketch(new String[]{"PrimeSpiralGenerator"}, psg);
+		PApplet.runSketch(new String[] { "PrimeSpiralGenerator" }, psg);
 	}
 
 	int[] primes;
@@ -17,7 +17,7 @@ public class PrimeSpiralGenerator extends PApplet {
 	int sHeight = 800; // height of screen
 	int scale = 2; // the side length of the squares
 
-	int currX = Math.round(sWidth / 2); //setting the current x and y to the center of screen
+	int currX = Math.round(sWidth / 2); // setting the current x and y to the center of screen
 	int currY = Math.round(sHeight / 2);
 
 	int xDir = -1; // variables controlling next square position placement
@@ -27,29 +27,30 @@ public class PrimeSpiralGenerator extends PApplet {
 
 	public void settings() {
 		size(sWidth, sHeight);
-		//fullScreen();
+		// fullScreen();
 	}
 
 	public void setup() {
+		background(255, 255, 0);
 		frameRate(100);
 
-		rectMode(CENTER); // draw rectangle from center
+		rectMode(CORNER); // draw rectangle from center
 
 		noStroke(); // no stroke
-		
+
 		// generating the primes (needs to be a little bit higher than semiprimes)
-		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.20));
+		generatePrimes((int) (Math.pow(sWidth / scale, 2) * 1.31));
 
 		// generating semiprimes
-		generateSemiprimes((int) (Math.pow(sWidth / scale, 2) * 1.1));
-		
+		generateSemiprimes((int) (Math.pow(sWidth / scale, 2) * 1.2));
+
 		// the numbers array
-		numbers = new Num[(int) Math.pow(sWidth / scale, 2) + 1]; // adding one since numbers is one indexed
-		
+		numbers = new Num[(int) Math.pow(sWidth / scale + 1, 2) + 1]; // adding one since numbers is one indexed
+
 		for (int i = 0; i < numbers.length; i++) { // initializing numbers
 			numbers[i] = new Num(i, 0); // setting number type to composite
 		}
-		
+
 		setNumberTypes();
 
 		// for(int n: semiprimes) {
@@ -64,6 +65,7 @@ public class PrimeSpiralGenerator extends PApplet {
 	}
 
 	public void drawSquare() {
+
 		// me splendid if else statements
 
 		if (squareNum == 1) {
@@ -71,7 +73,7 @@ public class PrimeSpiralGenerator extends PApplet {
 			stroke(255, 0, 0);
 			fill(255, 0, 0);
 
-		} else if (numbers[squareNum].getType() == 1) { //checking if number is semiprime (type 1)
+		} else if (numbers[squareNum].getType() == 1) { // checking if number is semiprime (type 1)
 			// coloring semiprimes green
 			//stroke(0, 128, 0);
 			//fill(0, 128, 0);
@@ -87,8 +89,8 @@ public class PrimeSpiralGenerator extends PApplet {
 			stroke(255, 255, 255);
 			fill(255, 255, 255);
 		}
-		
-		rect(currX, currY, scale, scale); // drawing the square
+
+		rect(currX, currY, scale / 2.0f, scale / 2.0f); // drawing the square
 		squareNum++; // increasing the square number we are on
 	}
 
@@ -188,19 +190,19 @@ public class PrimeSpiralGenerator extends PApplet {
 		long time = endTime - startTime;
 		System.out.println("Generated " + numSemiprimes + " semiprime numbers in " + time + " milliseconds!");
 	}
-	
-	public void setNumberTypes () {
+
+	public void setNumberTypes() {
 		for (int i = 0; i < primes.length; i++) {
 			try {
-				numbers[primes[i]].setType(2); 
+				numbers[primes[i]].setType(2);
 			} catch (IndexOutOfBoundsException e) {
 
 			}
 		}
-		
+
 		for (int i = 0; i < primes.length; i++) {
 			try {
-				numbers[semiprimes[i]].setType(1); 
+				numbers[semiprimes[i]].setType(1);
 			} catch (IndexOutOfBoundsException e) {
 
 			}
