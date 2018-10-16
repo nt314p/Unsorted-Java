@@ -10,13 +10,14 @@ import java.lang.reflect.Method;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class Pepinot {
 
 	static Document doc = null;
-	static List<String> words = new ArrayList<String>();
+	static List<String> words = new ArrayList<String>(); // the prompt
 	static String attribute = ""; // y (an attribute of x)
 	static String object = ""; // x (has y as an attribute)
 	static Object answer;
@@ -103,32 +104,44 @@ public class Pepinot {
 		for (String s : words) { // printing out all words (without question phrase)
 			System.out.print(s + " ");
 		}
-		
+
 		int promptNumberIndex = -1;
 		for (int i = 0; i < words.size(); i++) {
 			if (isNumeric(words.get(i))) {
-				promptNumberIndex = i;
+				promptNumberIndex = i; // seeing if there is a number
 			}
 		}
 		System.out.println("\n\nNumber Index: " + promptNumberIndex);
 
 		if (words.contains("of")) { // seeing if the stripped prompt contains "of"
+			System.out.println("Splitting on \"of\"");
 			int splitIndex = words.indexOf("of"); // setting index
 			for (int i = 0; i < splitIndex; i++) { // iterating up to index
 				attribute += words.get(i) + "_"; // adding word to attribute
 			}
-			attribute = attribute.substring(0, attribute.length() - 1); // taking off last character (a space)
+			attribute = attribute.substring(0, attribute.length() - 1); // taking off last character (a _)
 
+			// skipping after the "of", adding words to the object
 			for (int i = splitIndex + 1; i < words.size(); i++) { // iterating from index to end of list
 				object += words.get(i) + " "; // adding word to object
 			}
-			object = object.substring(0, object.length() - 1); // taking off last character (a space)
-		} else if (!(promptNumberIndex ==-1)) { // most likely an IS question. EX: IS y x? where y is a number
-			
+			object = object.substring(0, object.length() - 1); // taking off last character (a _)
+		} else if (!(promptNumberIndex == -1)) { // true if the prompt contains a number
+			if (questionPhrase.equals("is")) { // question is in format of Is x y? A: y(x) EX: Is 13 prime? prime(13)
+				
+				object = words.get(promptNumberIndex); // setting x (the object) to the number index found above
+				for (int i = promptNumberIndex+1; i < words.size(); i++) { // iterating after object (number) index
+					attribute += words.get(i) + "_"; // adding word to attribute
+				}
+				attribute = attribute.substring(0, attribute.length() - 1); // taking off last character (a _)
+			}
 		}
-		
+
 		System.out.println("\n\nAttribute: " + attribute);
 		System.out.println("Object: " + object);
+
+		attribute = matchMethodName(attribute); // finding the correct method name (no alternates)
+		System.out.println("Corrected attribute:" + attribute);
 
 		try {
 			// getting the method based on the attribute
@@ -139,6 +152,7 @@ public class Pepinot {
 		} catch (NoSuchMethodException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			System.out.println("Method:" + attribute);
 		} catch (SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -159,19 +173,47 @@ public class Pepinot {
 
 	}
 
+	// All possible methods here:
+
 	public double square_root(String num) {
 		return Math.sqrt(Double.parseDouble(num));
+	}
+
+	// End of method list
+
+	public static String matchMethodName(String s) {
+		List<Node> m = getNodeList("altMethodNames");
+
+		for (Node n : m) {
+			// checking first if the child node has the same method name
+			String parentName = n.getNodeName();
+			if (s.equals(parentName)) {
+				return parentName;
+			}
+
+			NamedNodeMap nMap = n.getAttributes(); // generating list/map of attributes (the alt names)
+
+			for (int i = 0; i < nMap.getLength(); i++) { // iterating through attribute names
+				Node atr = nMap.item(i); // setting atr to the attribute
+				if (s.equals(atr.getNodeName())) { // seeing if the string matches the node name (alt name)
+					return parentName; // returning the parent name (the correct method name)
+				}
+			}
+		}
+
+		return null;
 	}
 
 	public static boolean isArticle(String s) {
 		// the article node containing article word children
 		List<Node> article = getNodeList("articleWords");
 
-		for (int i = 0; i < article.size(); i++) { // iterating over children and checking for equality
-			if (s.equals(article.get(i).getNodeName())) {
-				return true; // given string s is an article word
+		for (Node n : article) { // iterating over children
+			if (s.equals(n.getNodeName())) { // checking for name equality
+				return true; // parameter string is an article word
 			}
 		}
+
 		return false;
 	}
 
@@ -201,13 +243,13 @@ public class Pepinot {
 		}
 		return rl;
 	}
-	
+
 	public static boolean isNumeric(String strNum) {
-	    try {
-	        double d = Double.parseDouble(strNum); // trying to parse string to a number
-	    } catch (NumberFormatException | NullPointerException nfe) {
-	        return false; // catching the exception
-	    }
-	    return true;
+		try {
+			double d = Double.parseDouble(strNum);
+			return d == d;
+		} catch (NumberFormatException | NullPointerException nfe) {
+			return false; // catching the exception
+		}
 	}
 }

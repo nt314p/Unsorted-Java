@@ -37,4 +37,5 @@
     <fullyQualifiedTypeName name="com.sun.deploy.util.StringUtils"/>
     <fullyQualifiedTypeName name="processing.core.PApplet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.NamedNodeMap"/>
 </qualifiedTypeNameHistroy>
