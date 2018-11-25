@@ -6,6 +6,10 @@ import java.util.Scanner;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -39,17 +43,25 @@ public class Pepinot {
 		char punctuation = '\u0000';
 		String questionPhrase = "";
 
-		try {
+		try { // getting files
 
-			File file = new File("src/resources/data.xml");
+			File file = new File("src/resources/data.xml"); // data file
 
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-
 			Document docm = dBuilder.parse(file);
 
 			System.out.println("Root element: " + docm.getDocumentElement().getNodeName());
 
 			doc = docm;
+			
+			Path primeList = Paths.get("src/resources/primeList.txt"); // list of primes file
+			if (!primeList.toFile().exists()) {
+				System.out.println("Prime List doesn't exist. Creating file.");
+				// List<String>
+				Files.write(primeList, new List<String>, Charset.forName("ASCII"));
+			}		
+			
+			
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -72,8 +84,8 @@ public class Pepinot {
 			words.add(s); // looping through split input and adding them to word list
 		}
 
-		questionPhrase = matchQuestionPhrase();
-		System.out.println("\nQuestion phrase: " + questionPhrase);
+		questionPhrase = matchQuestionPhrase(); // extracting question phrase from prompt
+		System.out.println("\nQuestion phrase: " + questionPhrase); // printing question phrase
 
 		System.out.println("\nPunctuation: " + punctuation); // printing punctuation
 
