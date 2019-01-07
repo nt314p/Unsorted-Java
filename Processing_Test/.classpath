@@ -7,5 +7,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/ntong/Documents/processing-3.4/core/library/core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntong/Documents/Processing/libraries/sound/library/sound.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntong/Documents/Processing/libraries/sound/library/javamp3-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ntong/Documents/Processing/libraries/sound/library/jsyn-20171016.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

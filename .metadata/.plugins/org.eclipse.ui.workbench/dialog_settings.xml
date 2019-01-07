@@ -32,6 +32,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\ntong\Documents\Processing\libraries\sound\library\sound.jar"/>
 			<item value="C:\Users\ntong\Downloads\panzer_general.jar"/>
 		</list>
 	</section>
