@@ -18,16 +18,16 @@ public class VisualizedSorting extends PApplet {
 
 	float sWidth = 1200;
 	float sHeight = 800;
-	int[] x = createSequentialArray(500);
+	int[] x = createSequentialArray(1000);
 	
 	SinOsc sine;
 	TriOsc triOsc;
 
 	Runnable myrunnable = new Runnable() {
 		public void run() {
-			// radixSort(x, 2);
+			 radixSort(x, 2);
 			// selectionSort(x);
-			 insertionSort(x);
+			// insertionSort(x);
 			// cocktailSort(x);
 			System.out.println("Sort Complete.");
 		}
@@ -176,11 +176,15 @@ public class VisualizedSorting extends PApplet {
 
 			for (int i = 0; i < queue.length; i++) {
 				queue[i] = new ArrayList<Integer>();
+				delay(msdelay);
+
 			}
 
 			for (int i = 0; i < arr.length; i++) { // which digit are we sorting, ex: base=2, digits are 0 and 1
 				int digit = (int) (arr[i] / (Math.pow(base, exp)) % base);
 				queue[digit].add(arr[i]);
+				delay(msdelay);
+
 			}
 
 			int j = 0;
@@ -189,10 +193,10 @@ public class VisualizedSorting extends PApplet {
 					arr[j] = queue[k].get(l);
 					j++;
 				}
+				delay(msdelay);
 			}
-			delay(msdelay);
-			System.out.println("Exponent: " + exp + ", Multiple: " + Math.pow(base, exp));
-			display(queue);
+			//System.out.println("Exponent: " + exp + ", Multiple: " + Math.pow(base, exp));
+			//display(queue);
 		}
 	}
 

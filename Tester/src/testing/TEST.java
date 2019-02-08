@@ -6,25 +6,16 @@ public class TEST {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-		while (true) {
-			System.out.print("Hand: ");
-			System.out.println(isFlush(in.nextLine()));
-		}
+		System.out.println(mystery(5));
 	}
-	
-	public static boolean isFlush(String hand) {
-		char suit = '0';
-		String[] cards = hand.split(" ");
-		for (int i = 0; i < cards.length; i++) {
-			char currSuit = cards[i].charAt(cards[i].length()-1);
-			if (suit=='0') {
-				suit = currSuit;
-			} else if (!(currSuit == suit)) {
-				return false;
-			}
-		}
-		return true;
+
+	public static int mystery(int b) {
+		if (b == 0)
+			return 0;
+		if (b % 2 == 0)
+			return mystery(b - 1) + 3;
+		else
+			return mystery(b - 1) + 2;
 	}
 
 }

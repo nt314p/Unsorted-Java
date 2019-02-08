@@ -58,7 +58,7 @@ public class Pepinot {
 			if (!primeList.toFile().exists()) {
 				System.out.println("Prime List doesn't exist. Creating file.");
 				// List<String>
-				Files.write(primeList, new List<String>, Charset.forName("ASCII"));
+				//Files.write(primeList, new List<String>, Charset.forName("ASCII"));
 			}		
 			
 			
