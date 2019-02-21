@@ -21,9 +21,9 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 2160;
-	int sHeight = 1440;
-	int scale = 10; // the side length of each cell
+	int sWidth = 1500;
+	int sHeight = 1000;
+	int scale = 2; // the side length of each cell
 
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
 	
@@ -32,12 +32,13 @@ public class GameOfLife extends PApplet {
 
 	public void settings() {
 		fullScreen();
-		//size(sWidth, sHeight);
+		size(sWidth, sHeight);
 	}
 
 	public void setup() {
-		frameRate(40);
+		frameRate(30);
 		fill(255, 255, 0);
+		noStroke();
 		
 		for (int i = 0; i < sWidth/scale; i++) {
 			for (int j = 0; j < sHeight/scale; j++) {
@@ -49,11 +50,11 @@ public class GameOfLife extends PApplet {
 	public void draw() {
 		
 		display();
-		//step();
+		step();
 	}
 
 	public void keyTyped() {
-		step();
+		//step();
 	}
 
 	public void display() {
