@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\ntong\Documents\processing-3.4\core\library"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Nicolas\Documents\processing-3.5.3\core\library"/>
 	<item key="filters_last_used" value="filter_imports;"/>
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="0"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -53,9 +53,9 @@
 		</section>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item key="DIALOG_WIDTH" value="846"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		<item key="DIALOG_HEIGHT" value="1089"/>
+		<item key="DIALOG_WIDTH" value="678"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="889"/>
 		<item key="DIALOG_X_ORIGIN" value="668"/>
 		<item key="DIALOG_Y_ORIGIN" value="11"/>
 	</section>
@@ -85,7 +85,7 @@
 	<section name="RenameInformationPopup">
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item key="index" value="0"/>
+		<item key="index" value="3"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
