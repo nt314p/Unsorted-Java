@@ -38,7 +38,6 @@
 <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="VisualizedSorting"/>
-<fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="processing.core.PApplet"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -46,4 +45,5 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="jdk.internal.jline.internal.ShutdownHooks.Task"/>
 <fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
 </qualifiedTypeNameHistroy>
