@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\ntong\Dev\GitHub\Unsorted-Java\.metadata\.plugins\org.eclipse.jdt.core
-858238573.index
-2842528100.index
