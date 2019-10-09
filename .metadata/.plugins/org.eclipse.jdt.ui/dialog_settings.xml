@@ -95,7 +95,7 @@
 	<section name="JavaSearchPage">
 		<item key="HISTORY_SIZE" value="0"/>
 		<item key="CASE_SENSITIVE" value="false"/>
-		<item key="INCLUDE_MASK" value="11"/>
+		<item key="INCLUDE_MASK" value="15"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="0"/>
