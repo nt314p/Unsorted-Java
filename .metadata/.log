@@ -3853,3 +3853,1529 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:748)
+!SESSION 2019-08-19 15:40:34.455 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-19 15:40:59.033
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-08-19 15:41:05.100
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2019-08-19 15:44:20.675
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\Nicolas\AppData\Local\Temp\C__Users_Nicolas_eclipse_java-latest-released_eclipse_2d956d14acc0_c0a80019d953
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-08-19 15:44:21.765
+!MESSAGE Setup tasks were performed during startup. See 'C:\Users\Nicolas\eclipse\java-latest-released\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2019-08-19 15:44:24.562 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-08-19 15:44:56.134
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-08-19 15:44:58.217
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://com.genuitec.eclipse.meexplorer/com.genuitec.eclipse.meexplorer.breadcrumb.e4.BreadCrumbContainer
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-08-19 15:48:59.325
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-08-19 15:48:59.340
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:10:16.216
+!MESSAGE Invalid ZIP archive: ext/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:10:16.251
+!MESSAGE Invalid ZIP archive: ext/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:11:34.426
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\core.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:13:50.109
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1046)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.addLibraryEntries(AddSelectedLibraryToBuildpathAction.java:149)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.access$0(AddSelectedLibraryToBuildpathAction.java:129)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction$1.run(AddSelectedLibraryToBuildpathAction.java:111)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.run(AddSelectedLibraryToBuildpathAction.java:118)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:51.144
+!MESSAGE Invalid ZIP archive: ext/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:51.149
+!MESSAGE Invalid ZIP archive: lib/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:51.183
+!MESSAGE Invalid ZIP archive: ext/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:51.188
+!MESSAGE Invalid ZIP archive: lib/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:13:55.165
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\win32com.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1069)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.RemoveFromBuildpathAction$1.run(RemoveFromBuildpathAction.java:154)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.RemoveFromBuildpathAction.run(RemoveFromBuildpathAction.java:174)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:55.749
+!MESSAGE Invalid ZIP archive: lib/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:13:55.784
+!MESSAGE Invalid ZIP archive: lib/win32com.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:19:57.461
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.processElementRemoved(TypesIndexService.java:107)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:76)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:19:57.489
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.processElementRemoved(TypesIndexService.java:107)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:76)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:21:44.384
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\RXTXcomm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\rxtxSerial.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1046)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.addLibraryEntries(AddSelectedLibraryToBuildpathAction.java:149)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.access$0(AddSelectedLibraryToBuildpathAction.java:129)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction$1.run(AddSelectedLibraryToBuildpathAction.java:111)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddSelectedLibraryToBuildpathAction.run(AddSelectedLibraryToBuildpathAction.java:118)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:21:45.326
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:21:45.356
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:25:15.553
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\RXTXcomm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\rxtxSerial.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5838)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:25:15.591
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:29:14.411
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\RXTXcomm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\rxtxSerial.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1069)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.RemoveFromBuildpathAction$1.run(RemoveFromBuildpathAction.java:154)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.RemoveFromBuildpathAction.run(RemoveFromBuildpathAction.java:174)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:15.031
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:15.066
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:29:20.350
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\RXTXcomm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\rxtxSerial.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1046)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.addToClasspath(AddFolderToBuildpathAction.java:248)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.access$0(AddFolderToBuildpathAction.java:198)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction$1.run(AddFolderToBuildpathAction.java:177)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.run(AddFolderToBuildpathAction.java:184)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:21.126
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:21.159
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:38.644
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:38.967
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:29:39.026
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:30:57.911
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:30:57.978
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.ui.ide 2 4 2019-08-19 16:32:56.692
+!MESSAGE Problems occurred closing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-08-19 16:32:56.692
+!MESSAGE The project description file (.project) for 'GestureProcessor' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:33:07.168
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:33:07.487
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:33:07.572
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:34:34.980
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\RXTXcomm.jar
+  [+] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\rxtxSerial.dll
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.processElementAdded(TypesIndexService.java:89)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:70)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1278)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1288)
+	at org.eclipse.jdt.internal.ui.wizards.importer.JDTProjectNatureImportConfigurator.configure(JDTProjectNatureImportConfigurator.java:65)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.importProjectAndChildrenRecursively(SmartImportJob.java:462)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:34:43.636
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:34:43.922
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:34:43.998
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:36:11.024
+!MESSAGE Full project indexing required:
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\core.jar
+  [-] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5838)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-08-19 16:36:11.032
+!MESSAGE Problems occurred refreshing the selected resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2019-08-19 16:36:11.032
+!MESSAGE The project description file (.project) for 'GestureProcessor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'GestureProcessor' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:906)
+	at org.eclipse.core.internal.resources.Project.updateDescription(Project.java:1336)
+	at org.eclipse.core.internal.resources.File.updateMetadataFiles(File.java:382)
+	at org.eclipse.core.internal.localstore.RefreshLocalVisitor.visit(RefreshLocalVisitor.java:291)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:118)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:976)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:959)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1550)
+	at org.eclipse.ui.actions.RefreshAction.refreshResource(RefreshAction.java:274)
+	at org.eclipse.ui.actions.RefreshAction$2.execute(RefreshAction.java:234)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jdt.ui.actions.RefreshAction$WrappedWorkbenchRefreshAction.run(RefreshAction.java:116)
+	at org.eclipse.jdt.ui.actions.RefreshAction.performRefresh(RefreshAction.java:193)
+	at org.eclipse.jdt.ui.actions.RefreshAction.access$0(RefreshAction.java:188)
+	at org.eclipse.jdt.ui.actions.RefreshAction$1.run(RefreshAction.java:182)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:41)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:736)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5838)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:108)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter$1.run(WorkbenchRunnableAdapter.java:121)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2019-08-19 16:36:18.832
+!MESSAGE Full project indexing required:
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\core.jar
+  [-] C:\Program Files\Java\jdk-11.0.2\lib\jrt-fs.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\lib\comm.jar
+  [-] C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor\ext\win32com.dll
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.suggestRebuild(ProjectTypesIndex.java:444)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.rebuildIndex(TypesIndexService.java:120)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:57)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.process(TypesIndexService.java:63)
+	at org.eclipse.recommenders.internal.types.rcp.TypesIndexService.elementChanged(TypesIndexService.java:49)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1738)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1726)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1559)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1535)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyAndFire(DeltaProcessor.java:2256)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.resourceChanged(DeltaProcessor.java:2146)
+	at org.eclipse.jdt.internal.core.DeltaProcessingState.resourceChanged(DeltaProcessingState.java:477)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:379)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1502)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:807)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3569)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3529)
+	at org.eclipse.jdt.internal.core.JavaProject.setRawClasspath(JavaProject.java:3542)
+	at org.eclipse.jdt.internal.corext.buildpath.ClasspathModifier.commitClassPath(ClasspathModifier.java:1046)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.addToClasspath(AddFolderToBuildpathAction.java:248)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.access$0(AddFolderToBuildpathAction.java:198)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction$1.run(AddFolderToBuildpathAction.java:177)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:235)
+	at org.eclipse.ui.internal.progress.ProgressManager.run(ProgressManager.java:949)
+	at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddFolderToBuildpathAction.run(AddFolderToBuildpathAction.java:184)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:412)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:37:41.244
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:37:41.251
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureProcessor]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-08-19 16:40:41.415
+!MESSAGE Failed to download jre:jre:ovrm:zip:1.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact jre:jre:zip:ovrm:1.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:453)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:255)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:232)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:303)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:168)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact jre:jre:zip:ovrm:1.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/photon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:48)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:364)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:76)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:590)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:258)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:529)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:430)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-08-19 16:40:41.422
+!MESSAGE jre:jre:ovrm:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:41:17.462
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureIdentifier]
+
+!ENTRY org.eclipse.jdt.core 4 0 2019-08-19 16:41:17.513
+!MESSAGE Invalid ZIP archive: lib/rxtxSerial.dll [in GestureIdentifier]
+
+!ENTRY org.eclipse.jdt.core 4 4 2019-08-19 16:43:25.145
+!MESSAGE Error occurred while deleting: /GestureIdentifier/bin/com
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Could not delete '/GestureIdentifier/bin/com'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:367)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1771)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com.
+java.nio.file.DirectoryNotEmptyException: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:256)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:154)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:118)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1771)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2019-08-19 16:43:25.146
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2019-08-19 16:43:25.146
+!MESSAGE Could not delete '/GestureIdentifier/bin/com'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:367)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1771)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com.
+java.nio.file.DirectoryNotEmptyException: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:256)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:154)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:118)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1771)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2019-08-19 16:43:25.146
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2019-08-19 16:43:25.147
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2019-08-19 16:43:25.147
+!MESSAGE Could not delete: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com.
+!STACK 0
+java.nio.file.DirectoryNotEmptyException: C:\Users\Nicolas\Dev\Unsorted-Java\GestureIdentifier\bin\com
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:256)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:140)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:66)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:154)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:118)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1771)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:140)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:306)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:835)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

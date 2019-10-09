@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="SetupWizard">
 		<section name="ProgressPage">
-			<item value="true" key="restartIfNeeded"/>
+			<item key="restartIfNeeded" value="true"/>
 		</section>
 		<section name="ConfirmationPage">
 		</section>
@@ -10,11 +10,11 @@
 		</section>
 	</section>
 	<section name="org.eclipse.oomph.setup.ui.P2TaskUIServicesPrompter$UnsatisifiedRequirementsPrompter">
-		<item value="500" key="dialogHeight"/>
-		<item value="700" key="dialogWidth"/>
+		<item key="dialogHeight" value="500"/>
+		<item key="dialogWidth" value="700"/>
 	</section>
 	<section name="org.eclipse.oomph.setup.ui.LicenseDialog">
-		<item value="600" key="dialogHeight"/>
-		<item value="1000" key="dialogWidth"/>
+		<item key="dialogHeight" value="600"/>
+		<item key="dialogWidth" value="1000"/>
 	</section>
 </section>

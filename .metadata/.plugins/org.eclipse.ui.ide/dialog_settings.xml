@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Nicolas\Dev\Unsorted-Java\GestureProcessor"/>
+	</list>
 	<section name="CleanDialogSettings">
 		<item key="DIALOG_WIDTH" value="828"/>
 		<item key="TOGGLE_SELECTED" value="false"/>
