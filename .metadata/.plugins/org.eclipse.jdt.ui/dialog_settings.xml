@@ -67,15 +67,17 @@
 		<item key="height" value="400"/>
 	</section>
 	<section name="FatJarPackageWizard">
-		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\ntong\workspace"/>
-		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="MathHelp - Math"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\ntong\Documents\MathHelp.jar"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\ntong\workspace.xml"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="GameOfLife - Conway&apos;s_Game_of_Life"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Nicolas\Documents\GameOfLife.jar"/>
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
-		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="2"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Nicolas\Documents\GameOfLife.jar"/>
 			<item value="C:\Users\ntong\Documents\MathHelp.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\ntong\workspace.xml"/>
 			<item value=".xml"/>
 		</list>
 	</section>

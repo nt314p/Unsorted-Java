@@ -7,8 +7,6 @@ public class GameOfLife extends PApplet {
         PApplet.runSketch(new String[]{"GameOfLife"}, gol);
 	}
 
-	// ADD MORE DEATH
-
 	/*
 	 * CONWAY'S GAME OF LIFE Rules:
 	 * 
@@ -21,40 +19,46 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 1500;
+	int sWidth = 1000;
 	int sHeight = 1000;
-	int scale = 2; // the side length of each cell
-
+	final int scale = 10; // the side length of each cell
+	final float probability = 0.0f; // how likely a cell will spawn at the beginning
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
-	
-	// set tmp to cells to get glitchy
+	final int fps = 20;
+	int fpsCounter = 0;
+	// set tmp to cells to get glitched effects due to a shared pointer
 	boolean tmp[][] = new boolean[sWidth / scale][sHeight / scale]; // cells;
 
 	public void settings() {
-		fullScreen();
+//		fullScreen();
+//		sWidth = displayWidth;
+//		sHeight = displayHeight;
 		size(sWidth, sHeight);
 	}
 
 	public void setup() {
-		frameRate(30);
+		frameRate(120);
 		fill(255, 255, 0);
 		noStroke();
-		
 		for (int i = 0; i < sWidth/scale; i++) {
 			for (int j = 0; j < sHeight/scale; j++) {
-				cells[i][j] = Math.random() < 0.5;
+				cells[i][j] = Math.random() < probability;
 			}
 		}
 	}
 
 	public void draw() {
-		
 		display();
-		step();
+
+//		if (120/((float)fps) <= fpsCounter) {
+//			step();
+//			fpsCounter = 0;
+//		}
+//		fpsCounter++;
 	}
 
 	public void keyTyped() {
-		//step();
+		step();
 	}
 
 	public void display() {

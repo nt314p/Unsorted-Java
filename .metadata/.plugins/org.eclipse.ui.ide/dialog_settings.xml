@@ -45,9 +45,9 @@
 		</section>
 	</section>
 	<section name="SaveAsDialogSettings">
-		<item key="DIALOG_WIDTH" value="875"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		<item key="DIALOG_HEIGHT" value="711"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="645"/>
 		<item key="DIALOG_X_ORIGIN" value="654"/>
 		<item key="DIALOG_Y_ORIGIN" value="257"/>
 	</section>
@@ -68,6 +68,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Nicolas\Dev\Unsorted-Java\Math"/>
 			<item value="C:\Users\Nicolas\Dev\Unsorted-Java\Conway&apos;s_Game_of_Life"/>
 		</list>
 	</section>
