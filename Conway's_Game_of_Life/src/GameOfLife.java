@@ -4,7 +4,7 @@ public class GameOfLife extends PApplet {
 
 	public static void main(String[] args) {
 		GameOfLife gol = new GameOfLife();
-        PApplet.runSketch(new String[]{"GameOfLife"}, gol);
+		PApplet.runSketch(new String[] { "GameOfLife" }, gol);
 	}
 
 	/*
@@ -13,16 +13,15 @@ public class GameOfLife extends PApplet {
 	 * 1. Any live cell with fewer than two live neighbors dies (under population).
 	 * 2. Any live cell with more than three live neighbors dies (over population).
 	 * 3. Any live cell with two or three live neighbors lives, unchanged, to the
-	 * next generation. 
-	 * 4. Any dead cell with exactly three live neighbors will come
+	 * next generation. 4. Any dead cell with exactly three live neighbors will come
 	 * to life.
 	 * 
 	 */
 
 	int sWidth = 1000;
 	int sHeight = 1000;
-	final int scale = 10; // the side length of each cell
-	final float probability = 0.0f; // how likely a cell will spawn at the beginning
+	final int scale = 2; // the side length of each cell
+	final float probability = 0.5f; // how likely a cell will spawn at the beginning
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
 	final int fps = 20;
 	int fpsCounter = 0;
@@ -37,11 +36,12 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void setup() {
-		frameRate(120);
+		//surface.setResizable(true);
+		frameRate(200);
 		fill(255, 255, 0);
 		noStroke();
-		for (int i = 0; i < sWidth/scale; i++) {
-			for (int j = 0; j < sHeight/scale; j++) {
+		for (int i = 0; i < sWidth / scale; i++) {
+			for (int j = 0; j < sHeight / scale; j++) {
 				cells[i][j] = Math.random() < probability;
 			}
 		}
@@ -49,7 +49,7 @@ public class GameOfLife extends PApplet {
 
 	public void draw() {
 		display();
-
+		step();
 //		if (120/((float)fps) <= fpsCounter) {
 //			step();
 //			fpsCounter = 0;
@@ -66,8 +66,8 @@ public class GameOfLife extends PApplet {
 		background(100, 100, 100);
 
 		// drawing cells
-		for (int i = 0; i < (width / scale); i++) {
-			for (int j = 0; j < (height / scale); j++) {
+		for (int i = 0; i < (sWidth / scale); i++) {
+			for (int j = 0; j < (sHeight / scale); j++) {
 				if (cells[i][j]) {
 					rect(i * scale, j * scale, scale, scale);
 				}
@@ -77,9 +77,9 @@ public class GameOfLife extends PApplet {
 
 	public void step() {
 		// across
-		for (int i = 0; i < (width / scale); i++) {
+		for (int i = 0; i < (sWidth / scale); i++) {
 			// down
-			for (int j = 0; j < (height / scale); j++) {
+			for (int j = 0; j < (sHeight / scale); j++) {
 				// computing next iteration
 				int currNeighbors = getNeighbors(i, j);
 				if (currNeighbors == 3) {
@@ -97,8 +97,8 @@ public class GameOfLife extends PApplet {
 		}
 
 		// setting tmp array to the cells one
-		for (int i = 0; i < (width / scale); i++) {
-			for (int j = 0; j < (height / scale); j++) {
+		for (int i = 0; i < (sWidth / scale); i++) {
+			for (int j = 0; j < (sHeight / scale); j++) {
 				cells[i][j] = tmp[i][j];
 			}
 		}

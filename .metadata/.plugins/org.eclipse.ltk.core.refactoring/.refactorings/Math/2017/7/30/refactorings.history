@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename local variable &apos;w&apos; in &apos;math.A0PS.main(...)&apos; to &apos;x&apos;&#x0D;&#x0A;- Original project: &apos;Math&apos;&#x0D;&#x0A;- Original element: &apos;math.A0PS.main(String[]).w&apos;&#x0D;&#x0A;- Renamed element: &apos;w&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;w&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;math{A0PS.java[A0PS~main~\[QString;@w!145!150!149!149!I!0!false" name="x" references="true" stamp="1500833450613" version="1.0"/>
-</session>

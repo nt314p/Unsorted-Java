@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;YTC&apos;" deleteContents="true" description="Delete resource &apos;YTC&apos;" element1="/YTC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1488731465139"/>&#x0A;<refactoring comment="Delete resource &apos;YTC java&apos;" deleteContents="true" description="Delete resource &apos;YTC java&apos;" element1="/YTC java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1488731469966"/>
-</session>
