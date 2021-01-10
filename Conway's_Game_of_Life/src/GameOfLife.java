@@ -18,11 +18,12 @@ public class GameOfLife extends PApplet {
 	 * 
 	 */
 
-	int sWidth = 1000;
-	int sHeight = 1000;
-	final int scale = 2; // the side length of each cell
+	int sWidth = 400;
+	int sHeight = 800;
+	final int scale = 50; // the side length of each cell
 	final float probability = 0.5f; // how likely a cell will spawn at the beginning
 	boolean cells[][] = new boolean[sWidth / scale][sHeight / scale];
+	final boolean wrap = true; // should screenwrap occur
 	final int fps = 20;
 	int fpsCounter = 0;
 	// set tmp to cells to get glitched effects due to a shared pointer
@@ -36,7 +37,7 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void setup() {
-		//surface.setResizable(true);
+		// surface.setResizable(true);
 		frameRate(200);
 		fill(255, 255, 0);
 		noStroke();
@@ -49,7 +50,7 @@ public class GameOfLife extends PApplet {
 
 	public void draw() {
 		display();
-		step();
+		// step();
 //		if (120/((float)fps) <= fpsCounter) {
 //			step();
 //			fpsCounter = 0;
@@ -62,7 +63,6 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void display() {
-		// background
 		background(100, 100, 100);
 
 		// drawing cells
@@ -76,22 +76,16 @@ public class GameOfLife extends PApplet {
 	}
 
 	public void step() {
-		// across
-		for (int i = 0; i < (sWidth / scale); i++) {
-			// down
-			for (int j = 0; j < (sHeight / scale); j++) {
+		for (int i = 0; i < (sWidth / scale); i++) { // across
+			for (int j = 0; j < (sHeight / scale); j++) { // down
 				// computing next iteration
 				int currNeighbors = getNeighbors(i, j);
 				if (currNeighbors == 3) {
-					// Dead cell comes to life
-					tmp[i][j] = true;
-					//
+					tmp[i][j] = true; // Dead cell comes to life
 				} else if (currNeighbors == 2 && cells[i][j]) {
-					// Living cell stays alive
-					tmp[i][j] = true;
+					tmp[i][j] = true; // Living cell stays alive
 				} else {
-					// Cell dies
-					tmp[i][j] = false;
+					tmp[i][j] = false; // Cell dies
 				}
 			}
 		}
@@ -111,14 +105,20 @@ public class GameOfLife extends PApplet {
 		// l modifier is top (-1), center (0), or bottom (1)
 		for (int k = -1; k < 2; k++) {
 			for (int l = -1; l < 2; l++) {
-				// try catch for exceptions
+				if (wrap) {
+					if (cells[(i + k + cells.length) % cells.length][(j + l + cells[0].length) % cells[0].length]
+							&& !(k == 0 && l == 0)) { // if k=0 and l=0 then middle
+						
+						neighbors++; // if true, it has a neighbor
+					}
+					continue;
+				}
 				try {
 					if (cells[i + k][j + l] && !(k == 0 && l == 0)) { // if k=0 and l=0 then middle
-						// if true, it has a neighbor
-						neighbors++;
+						neighbors++; // if true, it has a neighbor
 					}
 				} catch (IndexOutOfBoundsException e) {
-
+					// no neighbor
 				}
 			}
 		}
