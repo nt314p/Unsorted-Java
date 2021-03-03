@@ -9,6 +9,11 @@ public class Point {
 		this.x = x;
 		this.y = y;
 	}
+	
+	public Point() {
+		this.x = 0;
+		this.y = 0;
+	}
 
 	public Point clone() {
 		return new Point(this.x, this.y);
@@ -36,6 +41,6 @@ public class Point {
 	}
 
 	public String toString() {
-		return "(" + x + ", " + y + ")";
+		return "(" + Math.round(x * 1000.0) / 1000.0 + ", " + Math.round(y * 1000.0) / 1000.0 + ")";
 	}
 }
