@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class DifferentialEquationStepper extends PApplet {
 
-	int box = 3;
+	int box = 8;
 
 	Point min = new Point(-box, -box);
 	Point max = new Point(box, box);
@@ -118,16 +118,19 @@ public class DifferentialEquationStepper extends PApplet {
 //			System.out.println("m: " + slope);
 //			System.out.println("p: " + tracer);
 			tracer = tracer.add(slope.normalize().multiply(stepSize));
-			if (i % spacing == 0)
-				ellipse((float) (tracer.x * scale + offset.x), (float) (-tracer.y * scale + offset.y), 2, 2);
+			set((int) (tracer.x * scale + offset.x) - 1, (int) (-tracer.y * scale + offset.y) - 1, color(255));
+		
+			//if (i % spacing == 0)
+				//ellipse((float) (tracer.x * scale + offset.x), (float) (-tracer.y * scale + offset.y), 2, 2);
 		}
 
 		tracer = start;
 		for (int i = 0; i < iterations; i++) {
 			Point slope = getSlope(tracer);
 			tracer = tracer.add(slope.normalize().multiply(-stepSize));
-			if (i % spacing == 0)
-				ellipse((float) (tracer.x * scale + offset.x), (float) (-tracer.y * scale + offset.y), 2, 2);
+			set((int) (tracer.x * scale + offset.x) - 1, (int) (-tracer.y * scale + offset.y) - 1, color(255));
+			//if (i % spacing == 0)
+				//ellipse((float) (tracer.x * scale + offset.x), (float) (-tracer.y * scale + offset.y), 2, 2);
 		}
 
 		long endTime = System.nanoTime();
@@ -176,8 +179,8 @@ public class DifferentialEquationStepper extends PApplet {
 		// func = -16 * x / (9 * y);
 		// func = x * y * Math.sin(x);
 		double u = 3f;
-		vx = 1;
-		vy = (3 - y) * Math.cos(x);
+		vx = 3 * y * y + 2 * y - 5;
+		vy = 2 * x;
 		// func = y * y - x * x * y * y;
 
 		if (func == unused)

@@ -30,10 +30,10 @@ public class BigPoint {
 		
 	}
 
-	public BigPoint normalize() {
-		BigDecimal magnitude = x.pow(2).add(y.pow(2)).sqrt(new MathContext(10));
-		return new BigPoint(x.divide(magnitude), y.divide(magnitude));
-	}
+//	public BigPoint normalize() {
+//		BigDecimal magnitude = ((Object) x.pow(2).add(y.pow(2))).sqrt(new MathContext(10));
+//		return new BigPoint(x.divide(magnitude), y.divide(magnitude));
+//	}
 
 	public boolean equals(BigPoint p) {
 		return p.x == x && p.y == y;

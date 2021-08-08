@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/Nicolas/Documents/processing-3.5.3/core/library/core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Nicolas/Documents/commons-codec-1.15/commons-codec-1.15.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
