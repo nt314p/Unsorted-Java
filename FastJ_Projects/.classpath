@@ -6,6 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Nicolas/Documents/fastj-engine-compiled-lib/fastj-engine-v0-3-0a.jar"/>
+	<classpathentry kind="lib" path="lib/FastJ-1.4.0-SNAPSHOT.jar" sourcepath="lib/FastJ-1.4.0-SNAPSHOT-sources.jar"/>
+	<classpathentry kind="lib" path="lib/FastJ-1.4.0-SNAPSHOT-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/FastJ-1.4.0-SNAPSHOT-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
